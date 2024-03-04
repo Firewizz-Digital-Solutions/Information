@@ -27,6 +27,27 @@
  */
 public class ConventionExampleClass : ConventionInformationClassBase
 {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /// <summary>
     /// Delegation and events. <see cref="SomethingChanged"/>
     /// </summary>
@@ -114,7 +135,29 @@ public class ConventionExampleClass : ConventionInformationClassBase
         var htmlHelper = "HtmlHelper  | dont do HTMLHelper";
         var uiControl = "UIControl";
     }
+
+    /// <summary>
+    /// Placement the same as properties. Static on top
+    /// </summary>
+    /// <returns></returns>
+    public static string StaticMethod() => "Static on top";
+
     
+    public string PublicMethod()
+    {
+        return "Public Method";
+    }
+
+    private string PrivateMethod => "Lesser accessible coming last";
+
+
+    /// <summary>
+    /// Finalizers (ie. disposing) comes last.
+    /// </summary>
+    public void Dispose()
+    {
+        
+    }
 }
 
 /// <summary>
