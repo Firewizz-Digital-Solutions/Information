@@ -27,27 +27,6 @@
  */
 public class ConventionExampleClass : ConventionInformationClassBase
 {
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     /// <summary>
     /// Delegation and events. <see cref="SomethingChanged"/>
     /// </summary>
@@ -156,7 +135,7 @@ public class ConventionExampleClass : ConventionInformationClassBase
     /// </summary>
     public void Dispose()
     {
-        
+        // Disposing objects, finalizing..
     }
 }
 
