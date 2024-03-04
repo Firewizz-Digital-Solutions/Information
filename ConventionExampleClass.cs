@@ -59,6 +59,10 @@ public class ConventionExampleClass : ConventionInformationClassBase
         AllFourBits = 8
     }
     
+    /// <summary>
+    /// Declare static member variables on top of all variable types
+    /// </summary>
+    public static string StaticOnTop = "";
     
     /// <summary>
     /// Pascal case for constants and not SCREAMING
@@ -73,13 +77,9 @@ public class ConventionExampleClass : ConventionInformationClassBase
 
     private readonly string _privateReadOnlyField = "Underscored camelCase";
     
-    #region Properties
-    
-    /// <summary>
-    /// Declare all member variables at the top of a class with static variables at the very top.
-    /// </summary>
-    public static string StaticOnTop = "";
-    
+    // Properties from most accessible above lesser accessible
+    #region Properties 
+
     public virtual string? YouMayOverrideMe { get; set; }
     
     public override string? InheritFromBase { get; set; }
